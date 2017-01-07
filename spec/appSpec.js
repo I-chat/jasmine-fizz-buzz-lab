@@ -1,4 +1,4 @@
-var fizzBuzz = require('../lib/fizz.js');
+var fizzBuzz = require('../lib/fizzBuzz.js');
 describe("Fizz Buzz tests ", function() {
 
   it("should return `Fizz` for number divisible by 3", function() {
@@ -11,7 +11,8 @@ describe("Fizz Buzz tests ", function() {
 
   it("should return 'Buzz' for number divisible by 5", function() {
     expect(fizzBuzz(20)).toBe('Buzz');
-  })
+  });
+
   it("should return `FizzBuzz` for 15", function() {
     expect(fizzBuzz(15)).toBe('FizzBuzz');
   });
@@ -28,6 +29,10 @@ describe("Fizz Buzz tests ", function() {
     expect(fizzBuzz(63)).toBe('Fizz');
   });
 
+  it("should return 'Fizz' for 33", function() {
+    expect(fizzBuzz(33)).toBe('Fizz');
+  });
+
   it("should return 7 since its indivisible by 3 and 5", function() {
     expect(fizzBuzz(7)).toBe(7);
   });
@@ -36,4 +41,8 @@ describe("Fizz Buzz tests ", function() {
     expect(fizzBuzz(101)).toBe(101);
   });
 
+  it("should return 17 since its indivisible by 3 and 5", function() {
+    expect(fizzBuzz(17)).toBe(17);
+  });
+  
 });
